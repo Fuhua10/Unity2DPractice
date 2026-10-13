@@ -1,0 +1,38 @@
+
+# 自动识别文本文件，并统一存储为 LF
+* text=auto
+
+# Unity 文件
+*.cs text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.mat text eol=lf
+*.controller text eol=lf
+*.anim text eol=lf
+*.inputactions text eol=lf
+*.scenetemplate text eol=lf
+
+# 项目配置
+*.json text eol=lf
+*.xml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+.vsconfig text eol=lf
+
+# 二进制资源，不转换换行符
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.fbx binary
+*.wav binary
+*.mp3 binary
+*.mp4 binary
+*.dll binary
+*.unitypackage binary
