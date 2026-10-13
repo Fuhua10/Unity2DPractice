@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 200f;
+    [SerializeField] float moveSpeed = 10f;
 
     Rigidbody2D rb;
 
@@ -25,8 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);   
-        rb.velocity = moveInput * moveSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);   
+        //rb.velocity = moveInput * moveSpeed;  //速度不用乘时间，位移才要速度乘时间
     }
 
     private void OnMove(InputValue value)
