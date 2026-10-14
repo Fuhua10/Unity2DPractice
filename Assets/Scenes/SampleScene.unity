@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6e5e584fbf996f418251999a086d0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPerfab: {fileID: 3987466786578455932, guid: 1444dce18f14cfb459ad75b678a7bdbc, type: 3}
+  bulletPerfab: {fileID: 3987466786578455932, guid: 1444dce18f14cfb459ad75b678a7bdbc, type: 3}
 --- !u!1 &277892261
 GameObject:
   m_ObjectHideFlags: 0
