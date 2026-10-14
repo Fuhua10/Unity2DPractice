@@ -39,15 +39,7 @@ public class PlayerShooting : MonoBehaviour
 
     private void OnFire(InputValue value)
     {
-        
-        if (value.isPressed)
-        {
-            isFiring = true;
-        }
-        else
-        {
-            isFiring = false;
-        }
+        isFiring = value.isPressed;
         
     }
 }
