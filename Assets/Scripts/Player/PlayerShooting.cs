@@ -5,12 +5,20 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
 
-    [SerializeField] GameObject coinPerfab;
+    [SerializeField] private GameObject bulletPerfab;
 
-    
+    private PlayerMovement playerMovement;
+
+    private void Start()
+    {
+        playerMovement = GetComponent<PlayerMovement>();
+    }
 
     private void OnFire()
     {
-        GameObject bullet = Instantiate(coinPerfab,transform.position,transform.rotation);
+        GameObject bullet = Instantiate(bulletPerfab,transform.position,transform.rotation);
+        
+        Projectile projectile = bullet.GetComponent<Projectile>();
+        projectile.initialize(playerMovement.FaceDir);
     }
 }
