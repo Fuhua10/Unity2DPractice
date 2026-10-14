@@ -5,9 +5,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 10f;
+    [SerializeField] private float moveSpeed = 10f;
 
-    Rigidbody2D rb;
+    private Rigidbody2D rb;
+
+    public Vector2 FaceDir {  get; private set; } = Vector2.right;
 
     Vector2 moveInput = Vector2.zero;
     // Start is called before the first frame update
@@ -33,5 +35,9 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = value.Get<Vector2>();
         moveInput = Vector2.ClampMagnitude(moveInput, 1f);
+        if (moveInput != Vector2.zero)
+        {
+            FaceDir = moveInput;
+        }
     }
 }
