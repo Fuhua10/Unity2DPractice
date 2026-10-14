@@ -8,8 +8,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float stopDistance = 1.5f;
 
     private Transform playerTransform;
-    private Vector2 playerPosition = Vector2.zero;
-    private Vector2 position = Vector2.zero;
+    
+    
     private Rigidbody2D rb;
     private Vector2 direction = Vector2.zero;
 
@@ -33,8 +33,14 @@ public class EnemyController : MonoBehaviour
     
     void FixedUpdate()
     {
-        position = transform.position;
-        playerPosition = playerTransform.position;
+        if(playerTransform == null)
+        {
+            return;
+        }
+
+        Vector2 position = rb.position;
+        Vector2 playerPosition = playerTransform.position;
+
         distance = Vector2.Distance(position,playerPosition);
 
         if(distance > stopDistance)

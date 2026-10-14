@@ -1704,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7244279191126289311, guid: c69d9e7462985544fa8fe601363dd0e7, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7268261950617114731, guid: c69d9e7462985544fa8fe601363dd0e7, type: 3}
       propertyPath: stopDistance
       value: 1.5
