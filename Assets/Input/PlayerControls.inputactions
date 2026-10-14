@@ -21,7 +21,7 @@
                     "id": "1986a853-5874-4ff5-9e08-db13ca10de80",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 }
             ],
@@ -83,7 +83,7 @@
                 },
                 {
                     "name": "",
-                    "id": "24e49572-7bfb-43d5-bec8-5748d703c33c",
+                    "id": "e73066d4-7515-40ce-a93e-da66b622c1cf",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",

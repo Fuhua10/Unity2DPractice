@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -9,7 +8,6 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float bulletSpeed = 20f;
     [SerializeField] private float lifeTime = 3f;
 
-    private Vector2 faceDir;
     private Rigidbody2D rb;
 
 
@@ -20,7 +18,7 @@ public class Projectile : MonoBehaviour
 
 
 
-    public void initialize(Vector2 faceDir)
+    public void Initialize(Vector2 faceDir)
     {
         rb.velocity = faceDir * bulletSpeed;
         Destroy(gameObject,lifeTime);
